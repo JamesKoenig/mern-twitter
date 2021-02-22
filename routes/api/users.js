@@ -3,6 +3,7 @@ const bcrypt  = require('bcryptjs');
 const User    = require('../../models/User');
 const jwt     = require('jsonwebtoken');
 const keys    = require('../../config/keys');
+const passport = require('passport');
 const router  = express.Router();
 
 router.get("/test", (rec,res) => res.json({ msg: "This is the users route"}));
