@@ -1,2 +1,4 @@
 /config/keys.js
 /node_modules
+# ignore vim swapfiles
+*.swp
