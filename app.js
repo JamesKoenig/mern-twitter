@@ -14,7 +14,7 @@ mongoose
   .catch( err => console.log(err) );
 
 const passport = require('passport');
-app.use(passport.initialize);
+app.use(passport.initialize());
 require('./config/passport')(passport);
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
